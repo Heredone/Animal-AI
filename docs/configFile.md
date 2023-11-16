@@ -21,7 +21,7 @@ We describe below the structure of the configuration files for an instance of th
   <img height="400" src="PrefabsPictures/Arena.png">
 </p>
 
-A single arena is as shown above, it comes with a single agent (spherical animal - currently hedgehog, pig, or panda), a floor and 
+A single arena is as shown above, it comes with a single agent (spherical animal - in this case a hedgehog, but pig and panda skins are also available), a floor and 
 four walls. It is a square of size 40x40, the origin of the arena is `(0,0)`. You can provide coordinates for objects in the range `[0,40]x[0,40]` as floats.
 
 Note that in Unity the **y** axis is the vertical axis. In the above picture with the agent on the ground in the center of the environment its coordinates are (20, 0, 20).
@@ -53,7 +53,11 @@ Some objects have unique/special parameters that only apply to them or a select 
 	- a list of animal names, denoting the 'skin' that is applied to the agent model.
 	- **applies to:** `Agent` only
 	- **defaults to:** `"random"` (is assigned any animal from the list)
+<<<<<<< HEAD
 	- **preset list:** `"panda"`, `"pig"`, `"hedgehog"`, `"random"`
+=======
+	- **preset list:** `"panda"`, `"pig"`, `"hedgehog"`, `"random"` 
+>>>>>>> d56d9253cc1a7c4f2be68217d22073dbf07cf2ff
 - `delays`:
 	- a list of `float` fixed-frame time delays before each object's special behaviour is initiated.
 	- **applies to:** `DecayGoal`, `AntiDecayGoal`, `GrowGoal`, `ShrinkGoal`, `SpawnerTree`, `SpawnerDispenser`, `SpawnerContainer`
@@ -100,7 +104,7 @@ Some objects have unique/special parameters that only apply to them or a select 
 	- **defaults to:** `"default"` (if no name or invalid name given)
 	- **preset list:** `"left-arrow"`, `"right-arrow"`, `"up-arrow"`, `"down-arrow"`, `"u-turn-arrow"`, `"letter-a"`, `"letter-b"`, `"letter-c"`, `"square"`, `"triangle"`, `"circle"`, `"star"`, `"tick"`, `"cross"`
 - `frozenAgentDelays`:
-	- a float that freezes the agent for the specified number of frames at the start of an episode. There is no reward decrement during the frozen period, and all other objects continue to move and interact.
+	- a float that freezes the agent for the specified number of frames at the start of an episode. There is no reward decrement or attainment during the frozen period, and all other objects continue to move and interact. 
 	- **applies to:** `Agent` only
 	- **defaults to:** `0`
 - `moveDurations`:
