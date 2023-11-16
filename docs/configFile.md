@@ -53,7 +53,7 @@ Some objects have unique/special parameters that only apply to them or a select 
 	- a list of animal names, denoting the 'skin' that is applied to the agent model.
 	- **applies to:** `Agent` only
 	- **defaults to:** `"random"` (is assigned any animal from the list)
-	- **preset list:** `"panda"`, `"pig"`, `"hedgehog"`, `"random"` (more animals TBC)
+	- **preset list:** `"panda"`, `"pig"`, `"hedgehog"`, `"random"`
 - `delays`:
 	- a list of `float` fixed-frame time delays before each object's special behaviour is initiated.
 	- **applies to:** `DecayGoal`, `AntiDecayGoal`, `GrowGoal`, `ShrinkGoal`, `SpawnerTree`, `SpawnerDispenser`, `SpawnerContainer`
@@ -103,6 +103,25 @@ Some objects have unique/special parameters that only apply to them or a select 
 	- a float that freezes the agent for the specified number of frames at the start of an episode. There is no reward decrement during the frozen period, and all other objects continue to move and interact.
 	- **applies to:** `Agent` only
 	- **defaults to:** `0`
+- `moveDurations`:
+	- **applies to:** `Pillar-Button`
+	- **defaults to:** `"default"` 
+- `resetDurations`: 
+	- **applies to:** `Pillar-Button`
+	- **defaults to:** `"default"` 
+- `rewardNames`: 
+	- **applies to:** `Pillar-Button`
+	- **defaults to:** `"default"` 
+	- **preset list:** `"GoodGoal"`, `"BadGoal"`, `"GoodGoalMulti"` 
+- `rewardWeights`: 
+	- **applies to:** `Pillar-Button`
+	- **defaults to:** `"default"` 
+- `spawnProbability`: 
+	- **applies to:** `Pillar-Button`
+	- **defaults to:** `"default"` 
+- `rewardSpawnPos`: 
+	- **applies to:** `Pillar-Button`
+	- **defaults to:** `"default"` 
 
 ## Blackouts
 

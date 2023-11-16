@@ -6,7 +6,7 @@ This guide is *currently* designed predominantly for Windows users; a more detai
 
 ### Installing Python
 
-We recommend a newer version of Python be installed, but any version 3.x is fine. Python is generally easy to install:
+A Python version that is 3.8 to 3.10 is recommended. This is because earlier versions of Python are not active releases anymore, and later versions of Python have conflicting dependencies when installing Animal AI. Python is generally easy to install:
 * [Download](https://www.python.org/downloads/) -- default `.exe` download is fine, but unpacking a `.zip` download or Mac `.pkg` will also work
 * Run the download and follow the installation guide. Default installation settings are fine, but it is recommended to tick the `"Add to PATH"` box, so that Python can be run via the Windows Command Prompt by typing 'python' in any directory:
 <p align="center">
@@ -49,10 +49,10 @@ Everything you need to run scripts in AnimalAI v3 (including the correct version
 * Open a Command Prompt terminal and, if you are using a virtual environment, make sure to `activate` the environment first! (See above)
 * Navigate to your AAI root folder, then go to your cloned repository "animal-ai-main" (or whatever you named it)
 * If using **pip**:
-    * Run `pip install -e animalai` (if this doesn't work, ensure pip is installed correctly; `pip --version` shows the version you have installed to confirm this)
+    * Run `pip install animalai` (if this doesn't work, ensure pip is installed correctly; `pip --version` shows the version you have installed to confirm this)
 * If using **conda**:
     * AnimalAI does not have a package build that is directly compatible with conda itself, but you can still install it indirectly for use in conda
-    * Run `conda install pip` then (making sure you're in the main repository folder as instructed above) run `pip install -e animalai` as described for pip users
+    * Run `conda install pip` then (making sure you're in the main repository folder as instructed above) run `pip install animalai` as described for pip users
 
 ### Downloading the AAI Environment
 
